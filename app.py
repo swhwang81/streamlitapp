@@ -6,17 +6,18 @@ import pickle
 
 st.write("# Model Test")
 
-#model = pickle.load(open('iri.pkl', 'rb'))
+model = pickle.load(open('iri.pkl', 'rb'))
 arr = np.array([[5.9,3.0,5.0,1.8]])
-#pred =model.predict(arr)
-#if pred == 0:
-#    st.write("Setosa")
-#elif pred == 1:
-#    st.write("Versicolor")
-#elif pred == 2:
-#    st.write("Virginica")
-
 st.write(arr)
+pred =model.predict(arr)
+if pred == 0:
+    st.write("Setosa")
+elif pred == 1:
+    st.write("Versicolor")
+elif pred == 2:
+    st.write("Virginica")
+
+st.write(pred)
 
 st.title("My title")
 st.header("This is header")
