@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 #import matplotlib.pyplot as plt
 import pickle
+import streamlit.components.v1 as components  # Import Streamlit
 
 
 st.write("# Model Test")
@@ -103,3 +104,4 @@ with st.form(key='my_form'):
     password = st.text_input('Password')
     st.form_submit_button('Login')
 
+components.iframe("https://docs.streamlit.io/en/latest", width =800, height=800)
