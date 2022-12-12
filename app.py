@@ -16,7 +16,7 @@ elif pred == 1:
 elif pred == 2:
     st.write("Virginica")
 
-#st.write(pred)
+st.write(pred)
 
 st.title("My title")
 st.header("This is header")
